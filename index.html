@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nectar & Nymphs</title>
+
+
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow-sm">
+    	<div class="container">
+      	<!-- Brand -->
+      		<a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#hero">
+        		<span style="font-size:22px">🥐</span> Nectar & Nymphs
+      		</a>
+
+      	<!-- Toggler -->
+      		<button class="navbar-toggler border-0" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        		<span class="navbar-toggler-icon"></span>
+      		</button>
+
+      	<!-- Collapsible content -->
+      		<div class="collapse navbar-collapse" id="mainNav">
+        	<!-- Center links using mx-auto on the ul -->
+        		<ul class="navbar-nav mx-auto gap-lg-2">
+          			<li class="nav-item">
+            			<a class="nav-link active fw-semibold" aria-current="page" href="#hero">Home</a>
+          			</li>
+          			<li class="nav-item">
+            			<a class="nav-link" href="#our-products">Shop</a>
+          			</li>		
+          			<li class="nav-item">
+            			<a class="nav-link" href="#footer">About</a>
+          			</li>
+        		</ul>
+
+        <!-- Auth buttons — right-aligned on desktop, full-row on mobile -->
+        		<div class="nav-auth d-flex gap-2">
+          			<button class="btn btn-outline-secondary btn-sm px-3" type="button">Login</button>
+          			<button class="btn btn-warning btn-sm px-3 fw-semibold" type="button">Sign Up</button>
+        		</div>
+      		</div>
+    	</div>
+  	</nav>
+
+  <!-- ═══ HERO ═══ -->
+  	<section id="hero" class="hero-section py-5">
+    	<div class="container">
+      		<div class="row align-items-center gy-4">
+
+      		<!-- LEFT SIDE -->
+        	<!-- Text column -->
+        		<div class="col-12 col-lg-6 hero-text-col">
+          			<span class="badge bg-warning text-dark rounded-pill px-3 py-2 mb-3 fs-6">
+            			🌟 Fresh Daily
+          			</span>
+          			<h1 class="display-4 fw-bold text-dark lh-1 mb-3">
+            			Freshly Baked<br>Happiness
+          			</h1>
+          			<p class="lead fst-italic text-light mb-4" style="max-width:420px">
+            			Handcrafted croissants, donuts, cakes, artisan coffee, and baking essentials delivered fresh every day.
+          			</p>
+          			<div class="d-flex gap-3 flex-wrap">
+            			<a href="#our-products" class="btn btn-warning btn-lg px-4 fw-semibold">Shop Pastries</a>
+          			</div>
+        		</div>
+
+        		<!-- RIGHT SIDE -->
+        		<div class="col-lg-5 mx-auto d-none d-lg-block">
+
+        			<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        			  <div class="carousel-indicators">
+        			    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        			    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        			    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        			    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        			  </div>
+        			  <div class="carousel-inner">
+        			    <div class="carousel-item active">
+        			      <img src="https://images.unsplash.com/photo-1725524144999-7e27f70fcadd?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+        			      <div class="carousel-caption d-none d-md-block">
+        			        <a href="#our-products" class="text-decoration-none text-light">
+        			        	<h5>Baker's Starter Kit</h5>
+        			        	<p>Complete beginner set with measuring tools, mixing bowl, whisk, and baking essentials.</p>
+        			        </a>
+        			      </div>
+        			    </div>
+        			    <div class="carousel-item">
+        			      <img src="https://images.unsplash.com/photo-1649019937955-9687640aaaab?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+        			      <div class="carousel-caption d-none d-md-block">
+        			        <a href="#our-products" class="text-decoration-none text-light">
+        			        	<h5>Chocolate Croissant</h5>
+        			        	<p>Flaky buttery croissant filled with rich premium chocolate.</p>
+        			        </a>
+        			      </div>
+        			    </div>
+        			    <div class="carousel-item">
+        			      <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+        			      <div class="carousel-caption d-none d-md-block">
+        			        <a href="#our-products" class="text-decoration-none text-light">
+        			        	<h5>Red Velvet Cupcake</h5>
+        			        	<p>Rich red velvet cake with smooth cream cheese frosting.</p>
+        			        </a>
+        			      </div>
+        			    </div>
+
+        			    <div class="carousel-item">
+        			      <img src="https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=749&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+        			      <div class="carousel-caption d-none d-md-block">
+        			        <a href="#our-products" class="text-decoration-none text-light">
+        			        	<h5>Espresso Roast Coffee Beans</h5>
+        			        	<p>Bold and rich beans perfect for espresso lovers.</p>
+        			        </a>
+        			      </div>
+        			    </div>
+        			  </div>
+        			  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        			    <span class="visually-hidden">Previous</span>
+        			  </button>
+        			  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        			    <span class="visually-hidden">Next</span>
+        			  </button>
+        			</div>  
+      				     
+      			</div>
+
+      		</div>
+    	</div>
+  	</section>
+
+  <!-- ═══ BEST SELLER BAR ═══ -->
+  	<div class="hot-search-bar d-flex align-items-stretch bg-white border-top">
+    	<div class="hot-label d-flex align-items-center gap-2 px-4 py-3">
+      		<span class="fs-4">🥐</span>
+      		<div class="hot-label-text">Best<br>Seller</div>
+    	</div>
+    	<div class="hot-products-wrap flex-grow-1">
+      		<div class="hot-product d-flex align-items-center gap-3 px-4 py-3">
+        		<div class="product-icon">
+          			<img src="https://images.unsplash.com/photo-1725524144999-7e27f70fcadd?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        		</div>
+        		<div>
+          			<div class="fw-semibold text-dark small">Baker's Starter Kit</div>
+          			<div class="text-secondary small">₱599</div>
+        		</div>
+      		</div>
+      		<div class="hot-product d-flex align-items-center gap-3 px-4 py-3">
+        		<div class="product-icon">
+          			<img src="https://images.unsplash.com/photo-1649019937955-9687640aaaab?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        		</div>
+        		<div>
+          			<div class="fw-semibold text-dark small">Chocolate Croissant</div>
+          			<div class="text-secondary small">₱89</div>
+        		</div>
+      		</div>
+      		<div class="hot-product d-flex align-items-center gap-3 px-4 py-3">
+        		<div class="product-icon">
+          			<img src="https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=749&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        		</div>
+        		<div>
+          			<div class="fw-semibold text-dark small">Espresso Roast Beans</div>
+          			<div class="text-secondary small">₱245</div>
+        		</div>
+      		</div>
+    	</div>
+  	</div>
+
+
+  <!-- ═══ FEATURED PRODUCTS CARD ═══ -->  	
+	<section class="py-5 bg-white border-top">
+	  <div class="container">
+	    <h2 class="fw-bold mb-4">Featured Products</h2>
+
+	    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+
+	      <div class="carousel-inner px-5">
+
+	        <!-- Slide 1 -->
+	        <div class="carousel-item active">
+	          <div class="row g-3 justify-content-center">
+	            <div class="col-4">
+	              <div class="card border-0 shadow-sm h-100">
+	                <img src="https://images.unsplash.com/photo-1725524144999-7e27f70fcadd?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Product 1">
+	                <div class="card-body text-center">
+	                  <p class="fw-semibold mb-1 small">Baker's Starter Kit</p>
+	                  <p class="text-secondary small mb-2">₱599</p>
+	                  <button class="btn btn-warning btn-details btn-sm w-100">Add to Cart</button>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-4">
+	              <div class="card border-0 shadow-sm h-100">
+	                <img src="https://images.unsplash.com/photo-1649019937955-9687640aaaab?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Product 2">
+	                <div class="card-body text-center">
+	                  <p class="fw-semibold mb-1 small">Chocolate Croissant</p>
+	                  <p class="text-secondary small mb-2">₱89</p>
+	                  <button class="btn btn-warning btn-details btn-sm w-100">Add to Cart</button>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-4">
+	              <div class="card border-0 shadow-sm h-100">
+	                <img src="https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=749&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Product 3">
+	                <div class="card-body text-center">
+	                  <p class="fw-semibold mb-1 small">Espresso Beans</p>
+	                  <p class="text-secondary small mb-2">₱245</p>
+	                  <button class="btn btn-warning btn-details btn-sm w-100">Add to Cart</button>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+
+	        <!-- Slide 2 -->
+	        <div class="carousel-item">
+	          <div class="row g-3 justify-content-center">
+	            <div class="col-4">
+	              <div class="card border-0 shadow-sm h-100">
+	                <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Product 4">
+	                <div class="card-body text-center">
+	                  <p class="fw-semibold mb-1 small">Blueberry Muffin</p>
+	                  <p class="text-secondary small mb-2">₱65</p>
+	                  <button class="btn btn-warning btn-details btn-sm w-100">Add to Cart</button>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-4">
+	              <div class="card border-0 shadow-sm h-100">
+	                <img src="https://images.unsplash.com/photo-1681218079567-35aef7c8e7e4?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Product 4">
+	                <div class="card-body text-center">
+	                  <p class="fw-semibold mb-1 small">Classic Butter Croissant</p>
+	                  <p class="text-secondary small mb-2">₱70</p>
+	                  <button class="btn btn-warning btn-details btn-sm w-100">Add to Cart</button>
+	                </div>
+	              </div>
+	            </div>
+	            <div class="col-4">
+	              <div class="card border-0 shadow-sm h-100">
+	                <img src="https://images.unsplash.com/photo-1676300185983-d5f242babe34?q=80&w=695&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Product 4">
+	                <div class="card-body text-center">
+	                  <p class="fw-semibold mb-1 small">Strawberry Cheesecake Slice</p>
+	                  <p class="text-secondary small mb-2">₱65</p>
+	                  <button class="btn btn-warning btn-details btn-sm w-100">Add to Cart</button>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+
+	      </div>
+
+	      <!-- Prev/Next arrows -->
+	      <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+	        <span class="carousel-control-prev-icon" style="filter:invert(1)"></span>
+	      </button>
+	      <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+	        <span class="carousel-control-next-icon" style="filter:invert(1)"></span>
+	      </button>
+
+	    </div>
+	  </div>
+	</section>
+
+  <!-- ═══ OUR PRODUCTS ═══ -->  	
+  	<section id="our-products" class="py-5">
+  	  <div class="container">
+
+  	    <!-- Header row -->
+  	    <div class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2">
+  	      <h2 class="fw-bold mb-4">Our Products</h2>
+  	      <a href="#" class="btn btn-view-more">View More <i class="bi bi-arrow-right ms-1"></i></a>
+  	    </div>  
+
+  	    <!-- Product grid -->
+  	    <div class="row g-4" id="productGrid">
+
+  	      <div class="col-12 col-sm-6 col-lg-3 product-item" data-category="pastries">
+  	        <div class="product-card h-100">
+  	          <div class="card-img-wrap">
+  	            <img src="https://images.unsplash.com/photo-1725524144999-7e27f70fcadd?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Croissant">
+  	            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+  	          </div>
+  	          <div class="card-body d-flex flex-column">
+  	            <p class="product-name">Baker's Starter Kit</p>
+  	            <p class="product-price mb-3">₱599.00</p>
+  	            <div class="mt-auto d-flex align-items-center justify-content-between">
+  	              <button class="btn btn-details">View Details</button>
+  	              <button class="wishlist-btn position-static bg-transparent border-0 text-secondary fs-5 p-0">
+  	                <i class="bi bi-heart"></i>
+  	              </button>
+  	            </div>
+  	          </div>
+  	        </div>
+  	      </div>
+
+  	      <div class="col-12 col-sm-6 col-lg-3 product-item" data-category="cakes">
+  	        <div class="product-card h-100">
+  	          <div class="card-img-wrap">
+  	            <img src="https://images.unsplash.com/photo-1681218079567-35aef7c8e7e4?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cheesecake">
+  	            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+  	          </div>
+  	          <div class="card-body d-flex flex-column">
+  	            <p class="product-name">Classic Butter Croissant</p>
+  	            <p class="product-price mb-3">₱70.00</p>
+  	            <div class="mt-auto d-flex align-items-center justify-content-between">
+  	              <button class="btn btn-details">View Details</button>
+  	              <button class="wishlist-btn position-static bg-transparent border-0 text-secondary fs-5 p-0">
+  	                <i class="bi bi-heart"></i>
+  	              </button>
+  	            </div>
+  	          </div>
+  	        </div>
+  	      </div>
+
+  	      <div class="col-12 col-sm-6 col-lg-3 product-item" data-category="pastries">
+  	        <div class="product-card h-100">
+  	          <div class="card-img-wrap">
+  	            <img src="https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=749&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Donut">
+  	            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+  	          </div>
+  	          <div class="card-body d-flex flex-column">
+  	            <p class="product-name">Espresso Beans</p>
+  	            <p class="product-price mb-3">₱245.00</p>
+  	            <div class="mt-auto d-flex align-items-center justify-content-between">
+  	              <button class="btn btn-details">View Details</button>
+  	              <button class="wishlist-btn position-static bg-transparent border-0 text-secondary fs-5 p-0">
+  	                <i class="bi bi-heart"></i>
+  	              </button>
+  	            </div>
+  	          </div>
+  	        </div>
+  	      </div>
+
+  	      <div class="col-12 col-sm-6 col-lg-3 product-item" data-category="drinks">
+  	        <div class="product-card h-100">
+  	          <div class="card-img-wrap">
+  	            <img src="https://images.unsplash.com/photo-1649019937955-9687640aaaab?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Coffee">
+  	            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+  	          </div>
+  	          <div class="card-body d-flex flex-column">
+  	            <p class="product-name">Chocolate Croissant</p>
+  	            <p class="product-price mb-3">89.00</p>
+  	            <div class="mt-auto d-flex align-items-center justify-content-between">
+  	              <button class="btn btn-details">View Details</button>
+  	              <button class="wishlist-btn position-static bg-transparent border-0 text-secondary fs-5 p-0">
+  	                <i class="bi bi-heart"></i>
+  	              </button>
+  	            </div>
+  	          </div>
+  	        </div>
+  	      </div>
+
+  	      <div class="col-12 col-sm-6 col-lg-3 product-item" data-category="breads">
+  	        <div class="product-card h-100">
+  	          <div class="card-img-wrap">
+  	            <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bread">
+  	            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+  	          </div>
+  	          <div class="card-body d-flex flex-column">
+  	            <p class="product-name">Bluberry Muffin</p>
+  	            <p class="product-price mb-3">₱65.00</p>
+  	            <div class="mt-auto d-flex align-items-center justify-content-between">
+  	              <button class="btn btn-details">View Details</button>
+  	              <button class="wishlist-btn position-static bg-transparent border-0 text-secondary fs-5 p-0">
+  	                <i class="bi bi-heart"></i>
+  	              </button>
+  	            </div>
+  	          </div>
+  	        </div>
+  	      </div>
+
+  	      <div class="col-12 col-sm-6 col-lg-3 product-item" data-category="cakes">
+  	        <div class="product-card h-100">
+  	          <div class="card-img-wrap">
+  	            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Birthday Cake">
+  	            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+  	          </div>
+  	          <div class="card-body d-flex flex-column">
+  	            <p class="product-name">Chocolate Chip Cookies</p>
+  	            <p class="product-price mb-3">₱40.00</p>
+  	            <div class="mt-auto d-flex align-items-center justify-content-between">
+  	              <button class="btn btn-details">View Details</button>
+  	              <button class="wishlist-btn position-static bg-transparent border-0 text-secondary fs-5 p-0">
+  	                <i class="bi bi-heart"></i>
+  	              </button>
+  	            </div>
+  	          </div>
+  	        </div>
+  	      </div>
+
+  	      <div class="col-12 col-sm-6 col-lg-3 product-item" data-category="bundles">
+  	        <div class="product-card h-100">
+  	          <div class="card-img-wrap">
+  	            <img src="https://images.unsplash.com/photo-1676300185983-d5f242babe34?q=80&w=695&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bundle">
+  	            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+  	          </div>
+  	          <div class="card-body d-flex flex-column">
+  	            <p class="product-name">Strawberry Cheesecake Slice</p>
+  	            <p class="product-price mb-3">₱65.00</p>
+  	            <div class="mt-auto d-flex align-items-center justify-content-between">
+  	              <button class="btn btn-details">View Details</button>
+  	              <button class="wishlist-btn position-static bg-transparent border-0 text-secondary fs-5 p-0">
+  	                <i class="bi bi-heart"></i>
+  	              </button>
+  	            </div>
+  	          </div>
+  	        </div>
+  	      </div>
+
+  	      <div class="col-12 col-sm-6 col-lg-3 product-item" data-category="pastries">
+  	        <div class="product-card h-100">
+  	          <div class="card-img-wrap">
+  	            <img src="https://plus.unsplash.com/premium_photo-1675806017352-8505a8721c84?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Muffin">
+  	            <button class="wishlist-btn"><i class="bi bi-heart"></i></button>
+  	          </div>
+  	          <div class="card-body d-flex flex-column">
+  	            <p class="product-name">Caramel Macarons</p>
+  	            <p class="product-price mb-3">₱30.00</p>
+  	            <div class="mt-auto d-flex align-items-center justify-content-between">
+  	              <button class="btn btn-details">View Details</button>
+  	              <button class="wishlist-btn position-static bg-transparent border-0 text-secondary fs-5 p-0">
+  	                <i class="bi bi-heart"></i>
+  	              </button>
+  	            </div>
+  	          </div>
+  	        </div>
+  	      </div>
+
+  	    </div><!-- /row -->
+  	  </div>
+  	</section>
+
+  <!-- ═══ FOOTER ═══ -->
+  	<footer id="footer" class="bg-dark text-white pt-5 pb-3 mt-5">
+  	  <div class="container">
+  	    <div class="row g-4">
+
+  	      <!-- Brand col -->
+  	      <div class="col-12 col-md-4">
+  	        <div class="d-flex align-items-center gap-2 mb-3">
+  	          <span style="font-size:24px">🥐</span>
+  	          <span class="fw-bold fs-5">Nectar & Nymphs</span>
+  	        </div>
+  	        <p class="text-secondary small mb-3">
+  	          Handcrafted pastries, artisan coffee, and baking essentials
+  	          delivered fresh every day.
+  	        </p>
+  	        <!-- Socials -->
+  	        <div class="d-flex gap-3">
+  	          <a href="#" class="text-secondary fs-5"><i class="bi bi-facebook"></i></a>
+  	          <a href="#" class="text-secondary fs-5"><i class="bi bi-instagram"></i></a>
+  	          <a href="#" class="text-secondary fs-5"><i class="bi bi-tiktok"></i></a>
+  	          <a href="#" class="text-secondary fs-5"><i class="bi bi-twitter-x"></i></a>
+  	        </div>
+  	      </div>
+
+  	      <!-- Quick Links -->
+  	      <div class="col-6 col-md-2 offset-md-1">
+  	        <h6 class="fw-bold text-uppercase mb-3" style="letter-spacing:1px;font-size:.75rem">Shop</h6>
+  	        <ul class="list-unstyled">
+  	          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">All Products</a></li>
+  	          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Pastries</a></li>
+  	          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Ingredients</a></li>
+  	          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Tools</a></li>
+  	          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Drinks</a></li>
+  	        </ul>
+  	      </div>
+
+  	      <!-- Company -->
+  	      <div class="col-6 col-md-2">
+  	        <h6 class="fw-bold text-uppercase mb-3" style="letter-spacing:1px;font-size:.75rem">Company</h6>
+  	        <ul class="list-unstyled">
+  	          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">About Us</a></li>
+  	          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Careers</a></li>
+  	          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none small">Contact</a></li>
+  	        </ul>
+  	      </div>
+
+  	    </div>
+
+  	    <hr class="border-secondary mt-5 mb-3">
+
+  	    <!-- Bottom bar -->
+  	    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
+  	      <p class="text-secondary small mb-0">© 2026 Nectar & Nymphs. All rights reserved.</p>
+  	      <div class="d-flex gap-3">
+  	        <a href="#" class="text-secondary text-decoration-none small">Privacy Policy</a>
+  	        <a href="#" class="text-secondary text-decoration-none small">Terms of Use</a>
+  	      </div>
+  	    </div>
+  	  </div>
+  	</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+
+</body>
+</html>
